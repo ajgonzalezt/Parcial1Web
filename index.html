@@ -20,10 +20,12 @@
             <img
               src="imagenes/1EKrQIi.png"
               id="imagenCarrito"
-            />
+             onclick="mostrameCarrito()"/>
           </div>
           <div class="col">
-            <p id="count">0 Items</p>
+            <p id="count"
+            onclick="mostrameCarrito()">
+            0 Items</p>
           </div>
         </div>
     </div>
@@ -45,8 +47,34 @@
           <section id="muestraProductos">
               
           </section>
-
-    </main>              <script src='main.js'></script>
-
+         <script src='main.js'></script>
+         <div class="modal" id="modal" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Cancel the order</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Are you sure about canceling the order?</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" onclick="YesModal()" >Yes, I want to cancel the order</button>
+                <button type="button" class="btn btn-danger"onclick="NoModal()" >No, I want to continue adding products</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </main>              
+    <div>
+      <p> </p>
+    </div>
+      <div>
+        <p class="text-center">
+          <strong>Contact us: +57 3102105253 - info@restaurant.com - @restaurant</strong>
+        </p>
+      </div>
   </body>
 </html>
